@@ -12,7 +12,7 @@ def predict(data):
 st.title("Case Study On University Admission Prediction")
 st.markdown("Lets Predict Admission chances")
 
-st.header("chances to get addmission")
+st.header("")
 col1,col2 = st.columns(2)
 
 with col1:
@@ -32,7 +32,7 @@ with col1:
     Research = st.sidebar.slider("Research", 1.0, 10000.0, 0.5)
                           
 st.text('')
-if st.button("Sales Prediction"):
+if st.button("chances to get addmission"):
     result= clf.predict(np.array([[GRE,TOEFL,University,SOP,LOR,CGPA,Research]]))
     st.text(result[0])
     
